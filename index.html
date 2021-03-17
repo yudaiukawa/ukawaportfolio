@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>宇川雄大のポートフォリオ</title>
+    <link rel="stylesheet" href="portfolio1.css">
+  </head>
+    <body>
+      <div class="mainevent">
+        <div class="titlename">
+          <h1>宇川雄大のポートフォリオ</h1>
+        </div>
+        <div class="menu">
+          <a href="mailto:yudai1241.dy@gmail.com"><div class="mail">
+            <h1>連絡はこちら<br>yudai1241.dy@gmail.com</h1>
+          </div></a>
+          <a href="#"><div class="background">
+            <h1>経歴</h1>
+          </div></a>
+          <p>×</p>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.titlename h1').click(function(){
+            $('.menu').fadeIn();
+          });
+          $('p').click(function(){
+            $('.menu').fadeOut();
+          });
+          $(window).on("load",function(){
+            $('.titlename h1').delay(600).fadeIn("slow");
+          });
+        });
+      </script>
+    </body>
+</html>
